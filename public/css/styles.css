@@ -1,0 +1,91 @@
+/* Normalize CSS */
+* {
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+    color: #333;
+    padding: 20px;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.main-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-content {
+    background: #fff;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.section-content h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #4CAF50; /* Green color for headings */
+}
+
+.section-content p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.section-content img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+@media (min-width: 768px) {
+    .section-content {
+        display: flex;
+        align-items: center;
+    }
+
+    .section-content div {
+        flex: 1;
+        padding: 20px;
+    }
+
+    .section-content img {
+        max-width: 400px;
+        margin: 0 20px;
+    }
+}
